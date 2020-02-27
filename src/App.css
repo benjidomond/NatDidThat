@@ -1,38 +1,47 @@
-.App {
+#homeContainer {
+  background-image: url("images/solange.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#siteHeader {
   text-align: center;
+  font-size: 22px;
+  color: white;
+  align-self: flex-start;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#navContainer {
+  align-self: flex-end;
+  position: fixed;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#siteNav {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* removing underline from web link */
+.navLink:link {
+  text-decoration: none;
+}
+
+/* removing underline from visited link */
+.navLink:visited {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* set default color of the link to white */
+.navLink {
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
 }
